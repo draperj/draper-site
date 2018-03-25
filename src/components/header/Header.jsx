@@ -12,6 +12,16 @@ class Header extends Component {
           <p className="description">
             I am a developer focused on web and mobile applications.
           </p>
+          <p className="description">
+            My{" "}
+            <a
+              className="url-with-icon"
+              href="https://www.linkedin.com/in/joshua-draper/"
+            >
+              <i class="fab fa-linkedin" /> LinkedIn
+            </a>{" "}
+            is always up to date, please check it out!
+          </p>
         </div>
       </header>
     );

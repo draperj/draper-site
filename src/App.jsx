@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Header from "./components/header/Header";
 import "./App.scss";
 import CurrentlyWorkingWith from "./components/currentlyWorkingWith/CurrentlyWorkingWith";
+import Footer from "./components/footer/Footer";
 
 class App extends Component {
   render() {
@@ -9,6 +10,7 @@ class App extends Component {
       <div className="App">
         <Header />
         <CurrentlyWorkingWith />
+        <Footer />
       </div>
     );
   }

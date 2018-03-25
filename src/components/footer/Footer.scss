@@ -1,0 +1,11 @@
+@import "../../core.scss";
+
+.footer {
+  padding: 40px;
+  display: flex;
+  background-color: $black;
+
+  .date {
+    color: $vanilla;
+  }
+}

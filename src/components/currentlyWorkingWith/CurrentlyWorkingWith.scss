@@ -1,16 +1,17 @@
-@import '../../core.scss';
+@import "../../core.scss";
 
 .currently-working-with {
-    text-align: center;
-    .header {
-        color: $vanilla;
+  text-align: center;
+  .header {
+    color: $vanilla;
+  }
+  .logos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    img {
+      height: 124px;
     }
-    .logos {
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        img {
-            height: 124px;
-        }
-    }
+  }
 }

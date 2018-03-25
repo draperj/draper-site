@@ -1,33 +1,51 @@
-$main: #F34213;
-$secondary: #BC5D2E;
-$other: #DE9151;
-$vanilla: #BBB8B2;
-$white: #FDFDFD;
-$black: #2E2E3A;
-
+$main: #f34213;
+$secondary: #bc5d2e;
+$other: #de9151;
+$vanilla: #bbb8b2;
+$white: #fdfdfd;
+$black: #2e2e3a;
 
 @mixin for-xs {
-    @media (max-width: 599px) { @content; }
+  @media (max-width: 599px) {
+    @content;
   }
-  @mixin for-sm {
-    @media (min-width: 600px) { @content; }
+}
+@mixin for-sm {
+  @media (min-width: 600px) {
+    @content;
   }
-  @mixin for-md {
-    @media (min-width: 900px) { @content; }
+}
+@mixin for-md {
+  @media (min-width: 900px) {
+    @content;
   }
-  @mixin for-lg {
-    @media (min-width: 1200px) { @content; }
+}
+@mixin for-lg {
+  @media (min-width: 1200px) {
+    @content;
   }
-  @mixin for-xl {
-    @media (min-width: 1800px) { @content; }
+}
+@mixin for-xl {
+  @media (min-width: 1800px) {
+    @content;
   }
+}
 
 h1 {
-    font-size:54px;
-    font-weight:bolder;
+  font-size: 54px;
+  font-weight: bolder;
 }
 
 p {
-    font-size: 24px;
+  font-size: 24px;
 }
 
+.url-with-icon {
+  margin: 0 8px;
+  text-decoration: none;
+  color: #7a3b2e;
+
+  &:hover {
+    color: $black;
+  }
+}
