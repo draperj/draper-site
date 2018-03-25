@@ -6,10 +6,18 @@
   &.corner-label::before {
     content: "{}";
   }
+
   .header {
     color: $vanilla;
     text-align: center;
   }
+
+  @media (min-width: 0px) and (max-width: 600px) {
+    .header {
+      padding-top: 60px;
+    }
+  }
+
   .logos {
     display: flex;
     justify-content: center;
