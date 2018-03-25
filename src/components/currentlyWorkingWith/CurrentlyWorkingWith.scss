@@ -1,9 +1,14 @@
 @import "../../core.scss";
 
 .currently-working-with {
-  text-align: center;
+  position: relative;
+  margin-bottom: 40px;
+  &.corner-label::before {
+    content: "{}";
+  }
   .header {
     color: $vanilla;
+    text-align: center;
   }
   .logos {
     display: flex;
@@ -12,6 +17,35 @@
 
     img {
       height: 124px;
+      &#swift-icon {
+        height: 100px;
+        padding-top: 15px;
+      }
     }
+  }
+  .tech-stack {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    color: $vanilla;
+
+    .tech-col {
+      margin: 20px 40px;
+
+      h1 {
+        margin: 0;
+        font-size: 54px;
+      }
+      ul {
+        margin-left: 30px;
+        li {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .corner-label::before {
+    content: "{}";
   }
 }

@@ -10,17 +10,29 @@ class Header extends Component {
         <div className="header-intro">
           <h1 className="title">Hello world, this is Joshua Draper.</h1>
           <p className="description">
-            I am a developer focused on web and mobile applications.
+            I am a web and mobile developer based in NYC.
           </p>
           <p className="description">
-            My{" "}
             <a
               className="url-with-icon"
               href="https://www.linkedin.com/in/joshua-draper/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <i class="fab fa-linkedin" /> LinkedIn
-            </a>{" "}
-            is always up to date, please check it out!
+              <i class="fab fa-linkedin" /> linkedin.com/in/joshua-draper/
+            </a>
+            <br />
+            <a
+              className="url-with-icon"
+              href={
+                "mailto:" +
+                atob("ZHJhcGVyai5jdEBnbWFpbC5jb20") +
+                "?subject=jdraper.com Contact"
+              }
+            >
+              <i class="fas fa-envelope" />{" "}
+              {atob("ZHJhcGVyai5jdEBnbWFpbC5jb20")}
+            </a>
           </p>
         </div>
       </header>

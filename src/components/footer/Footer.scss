@@ -2,8 +2,13 @@
 
 .footer {
   padding: 40px;
+  position: relative;
   display: flex;
   background-color: $black;
+
+  &.corner-label::before {
+    content: "//";
+  }
 
   .date {
     color: $vanilla;

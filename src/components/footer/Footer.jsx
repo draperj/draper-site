@@ -8,7 +8,7 @@ class Footer extends Component {
       return new Date().getFullYear();
     };
     return (
-      <div className="footer">
+      <div className="footer corner-label">
         <div className="date">©{date()} Joshua Draper</div>
       </div>
     );
