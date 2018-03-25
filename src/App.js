@@ -8,7 +8,7 @@ class App extends Component {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Hello world Josh!</h1>
+          <h1 className="App-title">Hello world Josh! This is a test of our heroku deploy!</h1>
         </header>
       </div>
     );
