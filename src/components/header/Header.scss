@@ -1,0 +1,77 @@
+@import "../../core.scss";
+
+.header-c {
+  background: linear-gradient(208deg, $other, $main, $secondary, $vanilla);
+  background-size: 800% 800%;
+
+  -webkit-animation: Background 48s ease infinite;
+  -moz-animation: Background 48s ease infinite;
+  -o-animation: Background 48s ease infinite;
+  animation: Background 48s ease infinite;
+
+  @-webkit-keyframes Background {
+    0% {
+      background-position: 0% 48%;
+    }
+    50% {
+      background-position: 100% 53%;
+    }
+    100% {
+      background-position: 0% 48%;
+    }
+  }
+  @-moz-keyframes Background {
+    0% {
+      background-position: 0% 48%;
+    }
+    50% {
+      background-position: 100% 53%;
+    }
+    100% {
+      background-position: 0% 48%;
+    }
+  }
+  @-o-keyframes Background {
+    0% {
+      background-position: 0% 48%;
+    }
+    50% {
+      background-position: 100% 53%;
+    }
+    100% {
+      background-position: 0% 48%;
+    }
+  }
+  @keyframes Background {
+    0% {
+      background-position: 0% 48%;
+    }
+    50% {
+      background-position: 100% 53%;
+    }
+    100% {
+      background-position: 0% 48%;
+    }
+  }
+
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  color: $black;
+
+  .portrait {
+    height: 100%;
+    // margin: 20px;
+    border-radius: 100%;
+  }
+
+  .header-intro {
+    margin: 12px 40px;
+    .title {
+      color: $black;
+    }
+    .description {
+      color: $white;
+    }
+  }
+}

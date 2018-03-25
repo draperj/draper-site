@@ -1,0 +1,16 @@
+@import '../../core.scss';
+
+.currently-working-with {
+    text-align: center;
+    .header {
+        color: $vanilla;
+    }
+    .logos {
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        img {
+            height: 124px;
+        }
+    }
+}
