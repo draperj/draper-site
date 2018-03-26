@@ -51,10 +51,14 @@ p {
   }
 }
 
-.corner-label::before {
-  position: absolute;
-  top: -38px;
-  left: 18px;
-  color: $vanilla;
-  font-size: 60px;
+.corner-label {
+  margin-top: 80px;
+
+  &::before {
+    position: absolute;
+    top: -70px;
+    left: 18px;
+    color: $vanilla;
+    font-size: 54px;
+  }
 }
