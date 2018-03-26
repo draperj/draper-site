@@ -3,19 +3,10 @@
 .currently-working-with {
   position: relative;
   margin-bottom: 40px;
-  &.corner-label::before {
-    content: "<Currently working with/>";
-  }
 
   .header {
     color: $vanilla;
-    text-align: center;
-  }
-
-  @media (min-width: 0px) and (max-width: 600px) {
-    .header {
-      padding-top: 60px;
-    }
+    margin-top: 8px;
   }
 
   .logos {

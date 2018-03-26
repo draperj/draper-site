@@ -57,7 +57,8 @@ class CurrentlyWorkingWith extends Component {
       }
     };
     return (
-      <div className="currently-working-with corner-label">
+      <div className="currently-working-with">
+        <h1 className="header">{"<Currently working with />"}</h1>
         <div className="logos">
           <img src={react} alt="React" />
           <img src={angular} alt="Angular" />

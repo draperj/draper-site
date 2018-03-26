@@ -2,13 +2,11 @@
 
 .more-about-me {
   padding: 18px;
-  position: relative;
-  display: flex;
   background-color: $black;
   color: $vanilla;
 
-  &.corner-label::before {
-    content: "//More about me";
+  .header {
+    margin-top: 8px;
   }
 
   .date {

@@ -9,7 +9,8 @@ class MoreAboutMe extends Component {
       return new Date().getFullYear() - 2012;
     };
     return (
-      <div className="more-about-me corner-label">
+      <div className="more-about-me">
+        <h1 className="header">//More about me</h1>
         <p>
           I have been a web developer for {yearsSince()} years with a focus on
           full stack development. Promise to put something else informative and
