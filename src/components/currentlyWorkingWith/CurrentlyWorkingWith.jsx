@@ -30,6 +30,7 @@ class CurrentlyWorkingWith extends Component {
       other: [
         "Agile",
         "Web Development",
+        "DevOps",
         "Project Management",
         "Data Visualization"
       ]
