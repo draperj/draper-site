@@ -21,6 +21,7 @@ class CurrentlyWorkingWith extends Component {
         "nodeJS"
       ],
       backend: [
+        'Swift',
         ".net Core",
         "ASP.net MVC",
         "EPiServer",
@@ -42,7 +43,7 @@ class CurrentlyWorkingWith extends Component {
       if (items) {
         return (
           <ul class="fa-ul">
-            {items.map(function(item) {
+            {items.map(function (item) {
               return (
                 <li>
                   <span className="fa-li">
