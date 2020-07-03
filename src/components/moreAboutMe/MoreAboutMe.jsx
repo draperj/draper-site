@@ -13,8 +13,7 @@ class MoreAboutMe extends Component {
         <h1 className="header">//More about me</h1>
         <p>
           I have been a web developer for {yearsSince()} years with a focus on
-          full stack development. Promise to put something else informative and
-          interesting here soon...
+          full stack development. I enjoy working in all aspects of a the technical stack, with a passion for front-end development and testing strategies.
           {/* I enjoy working on small and medium size teams
           in an Agile environment, working directly with the product owner. */}
         </p>

@@ -2,7 +2,6 @@
   "name": "draper-site",
   "version": "0.1.0",
   "private": true,
-  // Currently for Heroku to properly build the NodeJS app it needs depedencies that would normally be placed into dev within the main deps group
   "dependencies": {
     "autoprefixer": "7.1.6",
     "babel-core": "6.26.0",

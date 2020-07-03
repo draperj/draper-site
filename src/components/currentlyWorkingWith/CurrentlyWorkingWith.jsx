@@ -13,6 +13,7 @@ class CurrentlyWorkingWith extends Component {
       frontend: [
         "Javascript (ES6+)",
         "React",
+        "Angular",
         "AngularJS",
         "lodash",
         "jQuery",
@@ -21,7 +22,7 @@ class CurrentlyWorkingWith extends Component {
         "nodeJS"
       ],
       backend: [
-        'Swift',
+        "Swift",
         ".net Core",
         "ASP.net MVC",
         "EPiServer",
@@ -29,9 +30,12 @@ class CurrentlyWorkingWith extends Component {
         "Microsoft SQL"
       ],
       other: [
-        "Agile",
         "Web Development",
+        "Automated Testing Strategies",
+        "AWS",
+        "Azure",
         "DevOps",
+        "Agile",
         "Project Management",
         "Data Visualization"
       ]
