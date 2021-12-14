@@ -1,4 +1,4 @@
-@import "../../core.scss";
+@import '../../core.scss';
 
 .currently-working-with {
   position: relative;
@@ -30,6 +30,7 @@
     color: $vanilla;
 
     .tech-col {
+      min-width: 275px;
       margin: 20px 40px;
 
       h1 {
@@ -45,6 +46,6 @@
     }
   }
   .corner-label::before {
-    content: "{}";
+    content: '{}';
   }
 }

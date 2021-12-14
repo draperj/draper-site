@@ -1,4 +1,6 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode, faCertificate } from '@fortawesome/free-solid-svg-icons'
 
 import react from "../../assets/react.svg";
 import angular from "../../assets/angular.svg";
@@ -7,19 +9,20 @@ import swift from "../../assets/swift.svg";
 
 import "./CurrentlyWorkingWith.scss";
 
-class CurrentlyWorkingWith extends Component {
-  state = {
+const CurrentlyWorkingWith = () => {
+  const [details] = useState({
     techstack: {
       frontend: [
+        "Typescript",
         "Javascript (ES6+)",
         "React",
         "Angular",
-        "AngularJS",
         "lodash",
         "jQuery",
         "HTML5",
         "CSS3",
-        "nodeJS"
+        "nodeJS",
+        "Electron"
       ],
       backend: [
         "Swift",
@@ -37,56 +40,57 @@ class CurrentlyWorkingWith extends Component {
         "DevOps",
         "Agile",
         "Project Management",
-        "Data Visualization"
+        "Data Visualization",
+        "Real Time Data"
       ]
+    }
+  });
+
+  const techList = (items, faIcon) => {
+    if (items) {
+      console.warn('faIcon', faIcon)
+      return (
+        <ul className="fa-ul">
+          {items.map((item) => {
+            return (
+              <li key={item}>
+                <span className="fa-li">
+                  <FontAwesomeIcon icon={faIcon} />
+                </span>{" "}
+                {item}
+              </li>
+            );
+          })}
+        </ul>
+      );
     }
   };
 
-  render() {
-    const techList = (items, faIcon) => {
-      if (items) {
-        return (
-          <ul class="fa-ul">
-            {items.map(function (item) {
-              return (
-                <li>
-                  <span className="fa-li">
-                    <i className={"fas " + faIcon} />
-                  </span>{" "}
-                  {item}
-                </li>
-              );
-            })}
-          </ul>
-        );
-      }
-    };
-    return (
-      <div className="currently-working-with">
-        <h1 className="header">{"<Currently working with />"}</h1>
-        <div className="logos">
-          <img src={react} alt="React" />
-          <img src={angular} alt="Angular" />
-          <img src={csharp} alt="C#" />
-          <img id="swift-icon" src={swift} alt="Swift" />
+  return (
+    <div className="currently-working-with">
+      <h1 className="header">{"<Currently working with />"}</h1>
+      <div className="logos">
+        <img src={react} alt="React" />
+        <img src={angular} alt="Angular" />
+        <img src={csharp} alt="C#" />
+        <img id="swift-icon" src={swift} alt="Swift" />
+      </div>
+      <div className="tech-stack">
+        <div className="tech-col">
+          <h1>Front-End</h1>
+          {techList(details.techstack.frontend, faCode)}
         </div>
-        <div className="tech-stack">
-          <div className="tech-col">
-            <h1>Front-End</h1>
-            {techList(this.state.techstack.frontend, "fa-code")}
-          </div>
-          <div className="tech-col">
-            <h1>Back-End</h1>
-            {techList(this.state.techstack.backend, "fa-code")}
-          </div>
-          <div className="tech-col">
-            <h1>Other</h1>
-            {techList(this.state.techstack.other, "fa-certificate")}
-          </div>
+        <div className="tech-col">
+          <h1>Back-End</h1>
+          {techList(details.techstack.backend, faCode)}
+        </div>
+        <div className="tech-col">
+          <h1>Other</h1>
+          {techList(details.techstack.other, faCertificate)}
         </div>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default CurrentlyWorkingWith;

@@ -1,18 +1,17 @@
-import React, { Component } from "react";
+import React from "react";
 
 import "./Footer.scss";
 
-class Footer extends Component {
-  render() {
-    const date = () => {
-      return new Date().getFullYear();
-    };
-    return (
-      <div className="footer corner-label">
-        <div className="date">©{date()} Joshua Draper</div>
-      </div>
-    );
-  }
+const Footer = () => {
+
+  const date = () => {
+    return new Date().getFullYear();
+  };
+  return (
+    <div className="footer corner-label">
+      <div className="date">©{date()} Joshua Draper</div>
+    </div>
+  );
 }
 
 export default Footer;

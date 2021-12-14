@@ -1,4 +1,4 @@
-@import "../../core.scss";
+@import '../../core.scss';
 
 .header-c {
   background: linear-gradient(-77deg, $main, $secondary, #913dff, #3dffe8);
@@ -75,6 +75,12 @@
     }
     .description {
       color: $black;
+      .url-with-icon {
+        svg {
+          padding-right: 4px;
+          width: 26px;
+        }
+      }
     }
   }
 }
