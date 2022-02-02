@@ -35,13 +35,13 @@ const CurrentlyWorkingWith = () => {
       other: [
         "Web Development",
         "Automated Testing Strategies",
+        "Real Time Data",
+        "Agile",
+        "DevOps",
+        "Project Management",
         "AWS",
         "Azure",
-        "DevOps",
-        "Agile",
-        "Project Management",
         "Data Visualization",
-        "Real Time Data"
       ]
     }
   });
