@@ -48,7 +48,6 @@ const CurrentlyWorkingWith = () => {
 
   const techList = (items, faIcon) => {
     if (items) {
-      console.warn('faIcon', faIcon)
       return (
         <ul className="fa-ul">
           {items.map((item) => {
