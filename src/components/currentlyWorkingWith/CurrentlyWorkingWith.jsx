@@ -70,7 +70,7 @@ const CurrentlyWorkingWith = () => {
 
   return (
     <div className="currently-working-with">
-      <h1 className="header">{"<Currently working with />"}</h1>
+      <h1 className="header">{`<Currently working with />`}</h1>
       <div className="logos">
         <img id="react-icon" src={react} alt="React" />
         <img id="gql-icon" src={graphql} alt="GraphQL" />
