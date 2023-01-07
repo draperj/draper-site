@@ -15,7 +15,7 @@ const Header = () => {
       <div className="header-intro">
         <h1 className="title">Hello world, this is Joshua Draper.</h1>
         <p className="description">
-          Lead Senior Developer based in Connecticut.
+          Lead engineer based in Connecticut.
         </p>
         <p className="description">
           <a
@@ -30,7 +30,7 @@ const Header = () => {
           <a
             className="url-with-icon"
             href={
-              `mailto:${base64Mail}?subject=jdraper.com Contact`
+              `mailto:${base64Mail}?subject=jdraper.me Contact`
             }
           >
             <FontAwesomeIcon icon={faEnvelope} />{base64Mail}
