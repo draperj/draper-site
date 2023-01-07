@@ -6,6 +6,7 @@ import react from "../../assets/react.svg";
 import angular from "../../assets/angular.svg";
 import csharp from "../../assets/c-sharp.svg";
 import swift from "../../assets/swift.svg";
+import graphql from "../../assets/graphql.svg";
 
 import "./CurrentlyWorkingWith.scss";
 
@@ -22,10 +23,12 @@ const CurrentlyWorkingWith = () => {
         "HTML5",
         "CSS3",
         "nodeJS",
-        "Electron"
+        "Electron",
+        "Swift"
       ],
       backend: [
-        "Swift",
+        "GraphQL",
+        "node",
         ".net Core",
         "ASP.net MVC",
         "EPiServer",
@@ -70,6 +73,7 @@ const CurrentlyWorkingWith = () => {
       <h1 className="header">{"<Currently working with />"}</h1>
       <div className="logos">
         <img src={react} alt="React" />
+        <img src={graphql} alt="GraphQL" />
         <img src={angular} alt="Angular" />
         <img src={csharp} alt="C#" />
         <img id="swift-icon" src={swift} alt="Swift" />
