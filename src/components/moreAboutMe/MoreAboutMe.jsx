@@ -10,7 +10,7 @@ const MoreAboutMe = () => {
     <div className="more-about-me">
       <h1 className="header">//More about me</h1>
       <p>
-        I have been a developer for {yearsSince()} years with a focus on
+        I have been an engineer for {yearsSince()} years with a focus on
         full stack web development. I enjoy working in all aspects of engineering with a passion for front-end development, devops, testing strategies and bettering code practices.
       </p>
     </div>
