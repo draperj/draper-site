@@ -72,10 +72,10 @@ const CurrentlyWorkingWith = () => {
     <div className="currently-working-with">
       <h1 className="header">{"<Currently working with />"}</h1>
       <div className="logos">
-        <img src={react} alt="React" />
-        <img src={graphql} alt="GraphQL" />
-        <img src={angular} alt="Angular" />
-        <img src={csharp} alt="C#" />
+        <img id="react-icon" src={react} alt="React" />
+        <img id="gql-icon" src={graphql} alt="GraphQL" />
+        <img id="angular-icon" src={angular} alt="Angular" />
+        <img id="csharp-icon" src={csharp} alt="C#" />
         <img id="swift-icon" src={swift} alt="Swift" />
       </div>
       <div className="tech-stack">
